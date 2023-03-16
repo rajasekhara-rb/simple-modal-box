@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    z-index: 0;
+    width: 250px;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    background-color: wheat;
+    color: rgb(228, 20, 20);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(131, 113, 113);
+    color: rgb(219, 204, 204);
+    border-radius: 10px;
+    border: 2px solid red;
+    padding: 25px;
+    margin: 25px;
+}
+
+
+#open:checked~.modal-box{
+    visibility: visible;
+}
+
+#close:checked~.modal-box{
+    visibility: hidden;
+}
